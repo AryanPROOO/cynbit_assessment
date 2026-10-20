@@ -28,8 +28,10 @@ cynbit-ai-assessment/
 ├── frontend/
 │   └── app.py                   # Streamlit web UI with Cynbit branding & glassmorphism
 │
-├── Opportunity_Report.md        # Step 2: Business & Monetization Report (Markdown)
-├── Technical_Approach_Report.md # Step 3: Engineering Architecture Report (Markdown)
+├── Opportunity_Report.pdf       # Step 2: Executive Business Report (PDF)
+├── Opportunity_Report.md        # Step 2: Markdown source
+├── Technical_Approach_Report.pdf# Step 3: Technical Architecture Report (PDF)
+├── Technical_Approach_Report.md # Step 3: Markdown source
 │
 ├── requirements.txt             # Python dependencies
 └── README.md                    # Project documentation & run guide
@@ -57,7 +59,8 @@ cynbit-ai-assessment/
 
 ## 📊 Step 2: Business Document (AI Opportunity Report)
 
-* 📝 **Business Report Document:** [`Opportunity_Report.md`](Opportunity_Report.md)
+* 📄 **Executive PDF Document:** [`Opportunity_Report.pdf`](Opportunity_Report.pdf)
+* 📝 **Markdown Document:** [`Opportunity_Report.md`](Opportunity_Report.md)
 
 ### Key Headings Addressed:
 * **Executive Summary:** Proposal for an AI-driven Skill-Gap Analyzer on Cynbit’s BitElevate platform.
@@ -72,7 +75,8 @@ cynbit-ai-assessment/
 
 ## 🛠️ Step 3: Engineering Document (Technical Approach Report)
 
-* 📝 **Engineering Architecture Document:** [`Technical_Approach_Report.md`](Technical_Approach_Report.md)
+* 📄 **Executive PDF Document:** [`Technical_Approach_Report.pdf`](Technical_Approach_Report.pdf)
+* 📝 **Markdown Document:** [`Technical_Approach_Report.md`](Technical_Approach_Report.md)
 
 ### Key Sections Addressed:
 * **System Architecture:** Decoupled Streamlit UI $\longleftrightarrow$ FastAPI REST Gateway $\longleftrightarrow$ NLP Engine with in-memory stream processing.
