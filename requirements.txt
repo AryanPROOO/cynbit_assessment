@@ -1,0 +1,22 @@
+# Cynbit AI Assessment - BitElevate Skill Gap Analyzer Dependencies
+
+# Core API & Web Server
+fastapi>=0.110.0
+uvicorn[standard]>=0.28.0
+python-multipart>=0.0.9
+pydantic>=2.6.0
+
+# Frontend UI
+streamlit>=1.32.0
+requests>=2.31.0
+
+# Natural Language Processing & PDF Parsing
+pypdf>=4.1.0
+PyPDF2>=3.0.1
+spacy>=3.7.4
+
+# PDF Report Generation (Business & Engineering Documents)
+reportlab>=4.1.0
+
+# Testing & Utilities
+httpx>=0.27.0

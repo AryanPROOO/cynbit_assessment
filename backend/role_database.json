@@ -1,0 +1,534 @@
+{
+  "roles": [
+    {
+      "id": "ai-engineer",
+      "title": "AI Engineer",
+      "category": "Artificial Intelligence & Generative AI",
+      "description": "Designs, builds, and deploys scalable AI applications, LLM pipelines, RAG systems, and autonomous agentic workflows.",
+      "required_skills": [
+        "Python",
+        "PyTorch",
+        "FastAPI",
+        "Docker",
+        "NLP",
+        "RAG",
+        "LangChain",
+        "Vector Databases",
+        "Git"
+      ],
+      "preferred_skills": [
+        "LlamaIndex",
+        "Hugging Face",
+        "MLflow",
+        "Kubernetes",
+        "Prompt Engineering",
+        "TensorFlow"
+      ],
+      "capstone_project": "Build an Autonomous Multi-Document RAG Agent with Hybrid Search and FastAPI Backend deployed on Docker.",
+      "skill_learning_map": {
+        "Python": {
+          "module_title": "Advanced Python & Asynchronous Programming",
+          "description": "Master OOP, generators, decorators, typing, and async/await in Python.",
+          "estimated_weeks": 2,
+          "difficulty": "Intermediate",
+          "recommended_cynbit_course": "BitElevate: Python Mastery for AI & Production Systems"
+        },
+        "PyTorch": {
+          "module_title": "Deep Learning Fundamentals with PyTorch",
+          "description": "Tensors, autograd, building neural networks, backpropagation, and training loop optimizations.",
+          "estimated_weeks": 3,
+          "difficulty": "Advanced",
+          "recommended_cynbit_course": "BitElevate: Deep Learning with PyTorch & Hugging Face"
+        },
+        "FastAPI": {
+          "module_title": "High-Performance APIs with FastAPI",
+          "description": "Asynchronous REST endpoints, Pydantic schemas, dependency injection, and streaming responses for LLMs.",
+          "estimated_weeks": 2,
+          "difficulty": "Intermediate",
+          "recommended_cynbit_course": "BitElevate: Production Backend Engineering for AI Services"
+        },
+        "Docker": {
+          "module_title": "Containerization & Cloud Packaging with Docker",
+          "description": "Multi-stage builds, Docker Compose, container orchestration basics, and GPU-accelerated containers.",
+          "estimated_weeks": 1,
+          "difficulty": "Intermediate",
+          "recommended_cynbit_course": "BitElevate: Cloud DevOps & Container Mastery"
+        },
+        "NLP": {
+          "module_title": "Modern Natural Language Processing",
+          "description": "Tokenization, embeddings, transformer architectures, self-attention mechanisms, and semantic similarity.",
+          "estimated_weeks": 3,
+          "difficulty": "Advanced",
+          "recommended_cynbit_course": "BitElevate: NLP from Scratch to Transformers"
+        },
+        "RAG": {
+          "module_title": "Retrieval-Augmented Generation (RAG) Architecture",
+          "description": "Chunking strategies, dense & sparse embeddings, hybrid search, reranking, and evaluation metrics (RAGAS).",
+          "estimated_weeks": 3,
+          "difficulty": "Advanced",
+          "recommended_cynbit_course": "BitElevate: Advanced Enterprise RAG & Generative AI"
+        },
+        "LangChain": {
+          "module_title": "LLM Orchestration with LangChain & LangGraph",
+          "description": "Chains, memory buffers, agent tool use, cyclical workflows, and human-in-the-loop agentic architectures.",
+          "estimated_weeks": 2,
+          "difficulty": "Intermediate",
+          "recommended_cynbit_course": "BitElevate: Building Autonomous AI Agents"
+        },
+        "Vector Databases": {
+          "module_title": "Vector Databases & Semantic Indexing",
+          "description": "ChromaDB, Pinecone, Qdrant, Milvus, HNSW indexing, cosine similarity, and metadata filtering.",
+          "estimated_weeks": 2,
+          "difficulty": "Intermediate",
+          "recommended_cynbit_course": "BitElevate: Vector Search & Knowledge Base Engineering"
+        },
+        "Git": {
+          "module_title": "Version Control & Collaborative Git Workflows",
+          "description": "Branching models, PR reviews, merge conflict resolution, and CI/CD triggers.",
+          "estimated_weeks": 1,
+          "difficulty": "Beginner",
+          "recommended_cynbit_course": "BitElevate: Developer Essentials & Version Control"
+        }
+      }
+    },
+    {
+      "id": "data-analyst",
+      "title": "Data Analyst",
+      "category": "Data & Business Intelligence",
+      "description": "Transforms raw transactional data into actionable business intelligence through statistical modeling, dashboards, and KPI metrics.",
+      "required_skills": [
+        "SQL",
+        "Excel",
+        "Python",
+        "Tableau",
+        "Pandas",
+        "Data Visualization",
+        "Statistics"
+      ],
+      "preferred_skills": [
+        "Power BI",
+        "NumPy",
+        "A/B Testing",
+        "Snowflake",
+        "PostgreSQL",
+        "Machine Learning"
+      ],
+      "capstone_project": "Build an Executive E-Commerce Cohort Analysis & Retention Dashboard using SQL, Pandas, and Tableau.",
+      "skill_learning_map": {
+        "SQL": {
+          "module_title": "Advanced SQL & Relational Database Analytics",
+          "description": "Complex joins, window functions, CTEs, subqueries, and query performance tuning.",
+          "estimated_weeks": 3,
+          "difficulty": "Intermediate",
+          "recommended_cynbit_course": "BitElevate: SQL for Data Analytics & Business Intelligence"
+        },
+        "Excel": {
+          "module_title": "Advanced Excel & Financial Modeling",
+          "description": "Power Query, XLOOKUP, pivot tables, data macros, and sensitivity analysis.",
+          "estimated_weeks": 2,
+          "difficulty": "Beginner",
+          "recommended_cynbit_course": "BitElevate: Excel Power Modeling Bootcamp"
+        },
+        "Python": {
+          "module_title": "Python for Data Analysis",
+          "description": "Data wrangling, cleaning dirty datasets, exploratory data analysis (EDA), and automation.",
+          "estimated_weeks": 2,
+          "difficulty": "Beginner",
+          "recommended_cynbit_course": "BitElevate: Applied Python for Data Analytics"
+        },
+        "Tableau": {
+          "module_title": "Interactive Storytelling with Tableau",
+          "description": "LOD expressions, parameters, dashboard actions, user-centric visual hierarchy.",
+          "estimated_weeks": 2,
+          "difficulty": "Intermediate",
+          "recommended_cynbit_course": "BitElevate: Tableau BI Masterclass"
+        },
+        "Pandas": {
+          "module_title": "High-Performance Data Wrangling with Pandas",
+          "description": "DataFrame operations, group-by aggregations, time-series analysis, and vectorization.",
+          "estimated_weeks": 2,
+          "difficulty": "Intermediate",
+          "recommended_cynbit_course": "BitElevate: Pandas & NumPy for High-Volume Analytics"
+        },
+        "Data Visualization": {
+          "module_title": "Data Visualization & Dashboard UI/UX",
+          "description": "Cognitive load reduction, color accessibility, chart selection heuristics, and storytelling.",
+          "estimated_weeks": 1,
+          "difficulty": "Beginner",
+          "recommended_cynbit_course": "BitElevate: Visual Analytics & Executive Reporting"
+        },
+        "Statistics": {
+          "module_title": "Inferential Statistics & Hypothesis Testing",
+          "description": "Probability distributions, p-values, confidence intervals, regression analysis, and A/B testing.",
+          "estimated_weeks": 3,
+          "difficulty": "Intermediate",
+          "recommended_cynbit_course": "BitElevate: Practical Statistics for Data Decision Making"
+        }
+      }
+    },
+    {
+      "id": "ml-engineer",
+      "title": "Machine Learning Engineer",
+      "category": "Artificial Intelligence & Generative AI",
+      "description": "Bridges research models with high-availability production systems through training pipelines, inference optimization, and MLOps.",
+      "required_skills": [
+        "Python",
+        "Scikit-Learn",
+        "TensorFlow",
+        "PyTorch",
+        "Docker",
+        "MLOps",
+        "Feature Engineering",
+        "Pandas",
+        "NumPy"
+      ],
+      "preferred_skills": [
+        "Kubeflow",
+        "AWS SageMaker",
+        "ONNX",
+        "Airflow",
+        "FastAPI",
+        "CI/CD"
+      ],
+      "capstone_project": "Deploy an Automated End-to-End Customer Churn Prediction Pipeline with Drift Detection & MLflow Tracking.",
+      "skill_learning_map": {
+        "Python": {
+          "module_title": "Production Python for ML Systems",
+          "description": "Object-oriented model pipelines, unit testing with PyTest, and code quality.",
+          "estimated_weeks": 2,
+          "difficulty": "Intermediate",
+          "recommended_cynbit_course": "BitElevate: Python Mastery for AI & Production Systems"
+        },
+        "Scikit-Learn": {
+          "module_title": "Applied Machine Learning with Scikit-Learn",
+          "description": "Supervised, unsupervised learning, cross-validation, hyperparameter tuning, and model evaluation metrics.",
+          "estimated_weeks": 2,
+          "difficulty": "Intermediate",
+          "recommended_cynbit_course": "BitElevate: Classical ML & Statistical Modeling"
+        },
+        "TensorFlow": {
+          "module_title": "Deep Neural Networks with TensorFlow / Keras",
+          "description": "Custom layers, loss functions, TF data pipelines, model export to SavedModel and TF Lite.",
+          "estimated_weeks": 3,
+          "difficulty": "Advanced",
+          "recommended_cynbit_course": "BitElevate: Production TensorFlow Deep Learning"
+        },
+        "PyTorch": {
+          "module_title": "Deep Learning Engineering with PyTorch",
+          "description": "PyTorch Lightning, distributed data parallel training, and mixed-precision inference.",
+          "estimated_weeks": 3,
+          "difficulty": "Advanced",
+          "recommended_cynbit_course": "BitElevate: Deep Learning with PyTorch & Hugging Face"
+        },
+        "Docker": {
+          "module_title": "Docker for ML Serving & Reproducibility",
+          "description": "Containerizing models, Triton Inference Server, microservices integration.",
+          "estimated_weeks": 1,
+          "difficulty": "Intermediate",
+          "recommended_cynbit_course": "BitElevate: Cloud DevOps & Container Mastery"
+        },
+        "MLOps": {
+          "module_title": "MLOps, Experiment Tracking & CI/CD",
+          "description": "MLflow, DVC, model registries, feature stores, drift detection, and automated retraining.",
+          "estimated_weeks": 3,
+          "difficulty": "Advanced",
+          "recommended_cynbit_course": "BitElevate: Enterprise MLOps & Production Pipelines"
+        },
+        "Feature Engineering": {
+          "module_title": "Feature Engineering & Dimensionality Reduction",
+          "description": "Encoding, imputation, scaling, PCA, t-SNE, polynomial features, and domain-specific feature creation.",
+          "estimated_weeks": 2,
+          "difficulty": "Intermediate",
+          "recommended_cynbit_course": "BitElevate: Feature Engineering & Preprocessing Masterclass"
+        },
+        "Pandas": {
+          "module_title": "Data Manipulation with Pandas",
+          "description": "Vectorized operations, data wrangling, memory optimization for large tabular datasets.",
+          "estimated_weeks": 2,
+          "difficulty": "Beginner",
+          "recommended_cynbit_course": "BitElevate: Pandas & NumPy for High-Volume Analytics"
+        },
+        "NumPy": {
+          "module_title": "Vector Computing with NumPy",
+          "description": "Matrix algebra, broadcasting, multidimensional array indexing, and low-level performance.",
+          "estimated_weeks": 1,
+          "difficulty": "Beginner",
+          "recommended_cynbit_course": "BitElevate: Scientific Python Computing"
+        }
+      }
+    },
+    {
+      "id": "full-stack-dev",
+      "title": "Full Stack Developer",
+      "category": "Software Engineering",
+      "description": "Develops responsive client-side interfaces and robust backend service layers with modern web frameworks and database systems.",
+      "required_skills": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Node.js",
+        "REST APIs",
+        "SQL",
+        "Git",
+        "HTML5",
+        "CSS3"
+      ],
+      "preferred_skills": [
+        "Next.js",
+        "Docker",
+        "PostgreSQL",
+        "Tailwind CSS",
+        "GraphQL",
+        "MongoDB"
+      ],
+      "capstone_project": "Build and Deploy a Full-Stack Collaborative Project Workspace with React, Node.js, and PostgreSQL.",
+      "skill_learning_map": {
+        "JavaScript": {
+          "module_title": "Modern JavaScript (ES6+)",
+          "description": "Event loop, closures, promises, prototypes, modules, and functional programming concepts.",
+          "estimated_weeks": 2,
+          "difficulty": "Beginner",
+          "recommended_cynbit_course": "BitElevate: Modern JavaScript Zero-to-Mastery"
+        },
+        "TypeScript": {
+          "module_title": "TypeScript for Enterprise Applications",
+          "description": "Interfaces, generics, type narrowing, utility types, and strict type safety.",
+          "estimated_weeks": 2,
+          "difficulty": "Intermediate",
+          "recommended_cynbit_course": "BitElevate: Production TypeScript & Clean Code"
+        },
+        "React": {
+          "module_title": "Advanced React & State Management",
+          "description": "Hooks, Context API, Redux/Zustand, performance optimization, and custom component design.",
+          "estimated_weeks": 3,
+          "difficulty": "Intermediate",
+          "recommended_cynbit_course": "BitElevate: React.js Architecture & Modern Patterns"
+        },
+        "Node.js": {
+          "module_title": "Backend Engineering with Node.js & Express",
+          "description": "Event-driven architecture, RESTful routing, authentication (JWT), error middleware, and clustering.",
+          "estimated_weeks": 3,
+          "difficulty": "Intermediate",
+          "recommended_cynbit_course": "BitElevate: Scalable Backend Engineering with Node.js"
+        },
+        "REST APIs": {
+          "module_title": "REST API Architecture & Design",
+          "description": "HTTP status codes, idempotency, API versioning, rate limiting, and OpenAPI/Swagger documentation.",
+          "estimated_weeks": 1,
+          "difficulty": "Beginner",
+          "recommended_cynbit_course": "BitElevate: REST & GraphQL API Masterclass"
+        },
+        "SQL": {
+          "module_title": "Relational Databases & Schema Design",
+          "description": "Normalization, indexing, transactions (ACID), ORMs (Prisma/TypeORM), and query optimization.",
+          "estimated_weeks": 2,
+          "difficulty": "Intermediate",
+          "recommended_cynbit_course": "BitElevate: Database Design & PostgreSQL Mastery"
+        },
+        "Git": {
+          "module_title": "Collaborative Git Workflows",
+          "description": "Git flow, pull requests, semantic commits, and rebasing.",
+          "estimated_weeks": 1,
+          "difficulty": "Beginner",
+          "recommended_cynbit_course": "BitElevate: Developer Essentials & Version Control"
+        },
+        "HTML5": {
+          "module_title": "Semantic HTML5 & Accessibility",
+          "description": "DOM structure, semantic elements, ARIA standards, and SEO fundamentals.",
+          "estimated_weeks": 1,
+          "difficulty": "Beginner",
+          "recommended_cynbit_course": "BitElevate: Modern Web Fundamentals"
+        },
+        "CSS3": {
+          "module_title": "Responsive CSS3 & Modern Layouts",
+          "description": "Flexbox, Grid, CSS variables, media queries, animations, and responsive UI principles.",
+          "estimated_weeks": 1,
+          "difficulty": "Beginner",
+          "recommended_cynbit_course": "BitElevate: Modern UI Design with CSS3 & Tailwind"
+        }
+      }
+    },
+    {
+      "id": "devops-engineer",
+      "title": "DevOps Engineer",
+      "category": "Cloud & Infrastructure",
+      "description": "Automates deployment pipelines, provisions infrastructure as code, and maintains high-availability cloud infrastructure.",
+      "required_skills": [
+        "Docker",
+        "Kubernetes",
+        "Linux",
+        "CI/CD",
+        "AWS",
+        "Terraform",
+        "Git",
+        "Bash",
+        "Python"
+      ],
+      "preferred_skills": [
+        "Prometheus",
+        "Grafana",
+        "Ansible",
+        "GCP",
+        "GitHub Actions",
+        "ArgoCD"
+      ],
+      "capstone_project": "Design a GitOps Kubernetes Cluster on AWS with Automated CI/CD, Prometheus Monitoring, and Terraform IaC.",
+      "skill_learning_map": {
+        "Docker": {
+          "module_title": "Container Architecture & Security",
+          "description": "Container internals, multi-stage builds, security scanning, rootless containers.",
+          "estimated_weeks": 2,
+          "difficulty": "Intermediate",
+          "recommended_cynbit_course": "BitElevate: Cloud DevOps & Container Mastery"
+        },
+        "Kubernetes": {
+          "module_title": "Kubernetes Cluster Administration (CKA Prep)",
+          "description": "Pods, Deployments, Services, Ingress, ConfigMaps, Helm charts, and cluster networking.",
+          "estimated_weeks": 4,
+          "difficulty": "Advanced",
+          "recommended_cynbit_course": "BitElevate: Certified Kubernetes Administrator (CKA)"
+        },
+        "Linux": {
+          "module_title": "Linux Systems Administration & Shell Scripting",
+          "description": "Process management, memory profiling, networking (iptables/DNS), and permissions.",
+          "estimated_weeks": 2,
+          "difficulty": "Intermediate",
+          "recommended_cynbit_course": "BitElevate: Linux Power Admin & System Internals"
+        },
+        "CI/CD": {
+          "module_title": "Automated CI/CD Pipelines",
+          "description": "GitHub Actions, GitLab CI, pipeline caching, automated testing, and zero-downtime blue/green deployment.",
+          "estimated_weeks": 2,
+          "difficulty": "Intermediate",
+          "recommended_cynbit_course": "BitElevate: CI/CD Pipeline Automation & GitOps"
+        },
+        "AWS": {
+          "module_title": "Amazon Web Services (AWS) Architecture",
+          "description": "EC2, S3, RDS, IAM, VPC networking, Lambda serverless, and cloud cost optimization.",
+          "estimated_weeks": 3,
+          "difficulty": "Intermediate",
+          "recommended_cynbit_course": "BitElevate: AWS Solutions Architect Associate"
+        },
+        "Terraform": {
+          "module_title": "Infrastructure as Code with Terraform",
+          "description": "State management, modules, remote backends, drift detection, and provider configurations.",
+          "estimated_weeks": 2,
+          "difficulty": "Intermediate",
+          "recommended_cynbit_course": "BitElevate: Terraform & Cloud Automation Masterclass"
+        },
+        "Git": {
+          "module_title": "Git for DevOps & Infrastructure",
+          "description": "GitOps principles, branch protection rules, and automated release tagging.",
+          "estimated_weeks": 1,
+          "difficulty": "Beginner",
+          "recommended_cynbit_course": "BitElevate: Developer Essentials & Version Control"
+        },
+        "Bash": {
+          "module_title": "Bash Scripting & Automation",
+          "description": "Shell automation, regex text manipulation (awk, sed, grep), and cron jobs.",
+          "estimated_weeks": 1,
+          "difficulty": "Beginner",
+          "recommended_cynbit_course": "BitElevate: Shell Scripting & CLI Automation"
+        },
+        "Python": {
+          "module_title": "Python for DevOps & Cloud Automation",
+          "description": "Boto3 AWS SDK, writing custom CLI tools, API integrations, and webhook handlers.",
+          "estimated_weeks": 2,
+          "difficulty": "Intermediate",
+          "recommended_cynbit_course": "BitElevate: Python for Cloud & Infrastructure Automation"
+        }
+      }
+    },
+    {
+      "id": "data-engineer",
+      "title": "Data Engineer",
+      "category": "Data & Business Intelligence",
+      "description": "Constructs resilient data pipelines, warehouses, and stream processing architectures to deliver clean data to ML and BI teams.",
+      "required_skills": [
+        "Python",
+        "SQL",
+        "Apache Spark",
+        "Airflow",
+        "Kafka",
+        "Data Warehousing",
+        "PostgreSQL",
+        "Docker",
+        "Git"
+      ],
+      "preferred_skills": [
+        "dbt",
+        "Snowflake",
+        "Databricks",
+        "AWS S3",
+        "Scala",
+        "Presto"
+      ],
+      "capstone_project": "Build a Real-Time Streaming Data Lakehouse with Kafka, PySpark, MinIO S3, and Apache Airflow.",
+      "skill_learning_map": {
+        "Python": {
+          "module_title": "Python for High-Throughput Data Engineering",
+          "description": "Generators, concurrency, PyArrow, parquet file optimizations, and data contracts.",
+          "estimated_weeks": 2,
+          "difficulty": "Intermediate",
+          "recommended_cynbit_course": "BitElevate: Python Mastery for AI & Production Systems"
+        },
+        "SQL": {
+          "module_title": "Analytical SQL & Data Modeling",
+          "description": "Kimball dimensional modeling, star/snowflake schemas, window functions, and partitioned tables.",
+          "estimated_weeks": 2,
+          "difficulty": "Intermediate",
+          "recommended_cynbit_course": "BitElevate: SQL for Data Analytics & Business Intelligence"
+        },
+        "Apache Spark": {
+          "module_title": "Distributed Big Data Processing with PySpark",
+          "description": "Spark DataFrames, Catalyst optimizer, partition pruning, broadcast joins, and structured streaming.",
+          "estimated_weeks": 3,
+          "difficulty": "Advanced",
+          "recommended_cynbit_course": "BitElevate: PySpark & Distributed Big Data Computing"
+        },
+        "Airflow": {
+          "module_title": "Workflow Orchestration with Apache Airflow",
+          "description": "DAG authoring, custom operators, sensors, dynamic task mapping, and backfilling.",
+          "estimated_weeks": 2,
+          "difficulty": "Intermediate",
+          "recommended_cynbit_course": "BitElevate: Data Pipeline Orchestration with Airflow"
+        },
+        "Kafka": {
+          "module_title": "Event Streaming with Apache Kafka",
+          "description": "Brokers, topics, partitions, consumer groups, schema registry, and event-driven architecture.",
+          "estimated_weeks": 3,
+          "difficulty": "Advanced",
+          "recommended_cynbit_course": "BitElevate: Real-Time Event Streaming with Apache Kafka"
+        },
+        "Data Warehousing": {
+          "module_title": "Modern Cloud Data Warehousing",
+          "description": "Snowflake, BigQuery, Redshift, staging vs production schemas, and Medallion lakehouse architecture.",
+          "estimated_weeks": 2,
+          "difficulty": "Intermediate",
+          "recommended_cynbit_course": "BitElevate: Modern Cloud Data Lakehouses"
+        },
+        "PostgreSQL": {
+          "module_title": "PostgreSQL Administration & Performance",
+          "description": "Indexing (B-Tree, GIN, GiST), EXPLAIN ANALYZE, vacuuming, and replication.",
+          "estimated_weeks": 2,
+          "difficulty": "Intermediate",
+          "recommended_cynbit_course": "BitElevate: Database Design & PostgreSQL Mastery"
+        },
+        "Docker": {
+          "module_title": "Containerized Data Infrastructure",
+          "description": "Deploying local Kafka, Airflow, and Postgres development stacks with Docker Compose.",
+          "estimated_weeks": 1,
+          "difficulty": "Intermediate",
+          "recommended_cynbit_course": "BitElevate: Cloud DevOps & Container Mastery"
+        },
+        "Git": {
+          "module_title": "Git for Data Engineering & dbt",
+          "description": "Version control for schemas, migrations, and CI pipelines.",
+          "estimated_weeks": 1,
+          "difficulty": "Beginner",
+          "recommended_cynbit_course": "BitElevate: Developer Essentials & Version Control"
+        }
+      }
+    }
+  ]
+}
