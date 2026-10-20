@@ -272,27 +272,11 @@ if selected_role_meta:
         for sk in selected_role_meta.get("required_skills", []):
             st.markdown(f"- **{sk}**")
 
-st.sidebar.markdown("---")
-st.sidebar.markdown("### 📄 One-Click Sample Resumes")
-st.sidebar.caption("Test the system instantly without uploading your own PDF:")
-
-sample_choice = st.sidebar.selectbox(
-    "Choose Test Profile",
-    options=["-- None (Upload Custom File) --", "Alex Chen (AI Engineer - High Match)", "Priya Sharma (Data Analyst - High Match)", "Rohit Verma (Fresher - High Gap)"],
-    index=0
-)
-
 # Main Workspace Layout
 col1, col2 = st.columns([1.1, 0.9])
 
 uploaded_file_bytes = None
 uploaded_filename = None
-
-sample_file_mapping = {
-    "Alex Chen (AI Engineer - High Match)": "sample_resumes/alex_chen_ai_engineer.pdf",
-    "Priya Sharma (Data Analyst - High Match)": "sample_resumes/priya_sharma_data_analyst.pdf",
-    "Rohit Verma (Fresher - High Gap)": "sample_resumes/rohit_verma_fresher.pdf"
-}
 
 with col1:
     st.markdown("#### 1. Upload Candidate Resume")
@@ -306,15 +290,6 @@ with col1:
         uploaded_file_bytes = uploaded_file.read()
         uploaded_filename = uploaded_file.name
         st.success(f"Loaded: `{uploaded_filename}` ({len(uploaded_file_bytes):,} bytes)")
-    elif sample_choice != "-- None (Upload Custom File) --":
-        sample_path = root_dir / sample_file_mapping[sample_choice]
-        if sample_path.exists():
-            with open(sample_path, "rb") as sf:
-                uploaded_file_bytes = sf.read()
-            uploaded_filename = sample_path.name
-            st.info(f"Loaded Sample Profile: **{sample_choice}** (`{uploaded_filename}`)")
-        else:
-            st.error("Sample resume file not found.")
 
 with col2:
     st.markdown("#### 2. Run Assessment")
@@ -333,7 +308,7 @@ st.markdown("---")
 # Execution & Results Handling
 if analyze_btn:
     if not uploaded_file_bytes:
-        st.error("Please upload a resume PDF or select a pre-loaded sample profile first.")
+        st.error("Please upload a candidate resume in PDF or TXT format first.")
     else:
         with st.spinner(f"Analyzing resume against '{selected_role_name}' requirements..."):
             result = None

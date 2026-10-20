@@ -28,19 +28,11 @@ cynbit-ai-assessment/
 ├── frontend/
 │   └── app.py                   # Streamlit web UI with Cynbit branding & glassmorphism
 │
-├── sample_resumes/              # Pre-generated realistic test resumes (PDF)
-│   ├── alex_chen_ai_engineer.pdf      # High-match AI Engineer profile (100% match)
-│   ├── priya_sharma_data_analyst.pdf  # High-match Data Analyst profile (100% match)
-│   └── rohit_verma_fresher.pdf        # Fresher profile (High gap / Remediation demo)
-│
 ├── Opportunity_Report.pdf       # Step 2: Business & Monetization Report (PDF)
 ├── Opportunity_Report.md        # Step 2: Markdown source
 ├── Technical_Approach_Report.pdf# Step 3: Engineering Architecture Report (PDF)
 ├── Technical_Approach_Report.md # Step 3: Markdown source
 │
-├── generate_sample_resumes.py   # Script to generate sample PDF resumes
-├── compile_reports_to_pdf.py    # Script to compile publication-grade PDF reports
-├── test_system.py               # Automated end-to-end test suite
 ├── requirements.txt             # Python dependencies
 └── README.md                    # Project documentation & run guide
 ```
@@ -128,7 +120,7 @@ python -m spacy download en_core_web_sm
 
 ## 🏃 Running the Application
 
-### Option A: Launch Both Backend & Frontend (Full Experience)
+### Option A: Launch Both Backend & Frontend (Full Microservice Experience)
 
 **Terminal 1 — Start the FastAPI Backend Server:**
 ```bash
@@ -150,42 +142,18 @@ The Streamlit frontend has an **intelligent local fallback**: if the FastAPI ser
 
 ---
 
-## 🧪 Testing with Sample Resumes
+## 📝 How to Use the Application
 
-The repository includes pre-built sample resumes in `sample_resumes/` for instant one-click testing:
-
-1. **Alex Chen (`alex_chen_ai_engineer.pdf`):**
-   * Target Role: **AI Engineer**
-   * Expected Result: **100.0% Match** (`Job Ready (High Match)`)
-2. **Priya Sharma (`priya_sharma_data_analyst.pdf`):**
-   * Target Role: **Data Analyst**
-   * Expected Result: **100.0% Match** (`Job Ready (High Match)`)
-3. **Rohit Verma (`rohit_verma_fresher.pdf`):**
-   * Target Role: **AI Engineer**
-   * Expected Result: **11.1% Match** (`Foundational Gap`), with 8 personalized BitElevate learning modules recommended!
-
----
-
-## 🔍 Running Automated Verification Tests
-
-Run the complete automated test suite verifying FastAPI endpoints, PDF stream extraction, and gap logic:
-
-```bash
-source venv/bin/activate
-python test_system.py
-```
-
-**Expected Test Output:**
-```plaintext
-Running BitElevate System Verification Suite...
-✓ Health check endpoint passed
-✓ Roles endpoint passed (6 roles available)
-✓ Text analysis passed: 55.6% match
-✓ PDF analysis (Alex Chen vs AI Engineer) passed: 100.0% match
-✓ PDF analysis (Fresher vs AI Engineer) passed: 11.1% match, 8 gaps identified
-
-🎉 ALL TESTS PASSED SUCCESSFULLY!
-```
+1. Open **`http://localhost:8501`** in any web browser.
+2. Select your desired **Target Dream Role** from the sidebar dropdown (e.g. *AI Engineer*, *Data Analyst*, *Full Stack Developer*, etc.).
+3. Upload any candidate resume file in **PDF** or **TXT** format using the drag-and-drop file uploader.
+4. Click **"🚀 Analyze Skill Gap Now"**.
+5. Instantly view:
+   * **Role Match Score (%)** and readiness status.
+   * **✅ Matched Skills** tags.
+   * **⚠️ Missing Skills (Skill Gap)** tags.
+   * **Personalized BitElevate Upskilling Roadmap** with weekly modules and Cynbit recommended courses.
+   * **Export Report** button to download full analysis in JSON format.
 
 ---
 
@@ -203,23 +171,31 @@ Returns all pre-configured target roles and skill benchmarks.
 {
   "status": "success",
   "candidate_metadata": {
-    "name": "Alex Chen",
-    "email": "alex.chen@cynbit-demo.com",
-    "phone": "+1 (555) 234-8901"
+    "name": "Candidate Name",
+    "email": "candidate@example.com",
+    "phone": "+1 555-0100"
   },
   "metrics": {
-    "match_percentage": 100.0,
-    "readiness_level": "Job Ready (High Match)",
-    "matched_count": 9,
+    "match_percentage": 77.8,
+    "readiness_level": "Minor Gap (Competitive Candidate)",
+    "matched_count": 7,
     "total_required": 9,
-    "missing_count": 0
+    "missing_count": 2
   },
   "skills_breakdown": {
-    "matched_skills": ["Docker", "FastAPI", "Git", "LangChain", "NLP", "PyTorch", "Python", "RAG", "Vector Databases"],
-    "missing_skills": []
+    "matched_skills": ["Docker", "FastAPI", "Git", "NLP", "PyTorch", "Python", "Vector Databases"],
+    "missing_skills": ["LangChain", "RAG"]
   },
   "recommendations": {
-    "learning_path": [],
+    "learning_path": [
+      {
+        "skill": "RAG",
+        "module_title": "Retrieval-Augmented Generation (RAG) Architecture",
+        "estimated_weeks": 3,
+        "difficulty": "Advanced",
+        "recommended_cynbit_course": "BitElevate: Advanced Enterprise RAG & Generative AI"
+      }
+    ],
     "recommended_capstone": "Build an Autonomous Multi-Document RAG Agent with FastAPI & Docker."
   }
 }
